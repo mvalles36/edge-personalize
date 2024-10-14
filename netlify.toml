@@ -1,0 +1,25 @@
+[build]
+  # Directory where your build files are located
+  publish = "build/main"
+  
+  # Command to build your project (running all build tasks)
+  command = "npm run build"
+
+  # Node.js version (as specified in your package.json)
+  node_version = "10"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-core"
+
+[functions]
+  # Use esbuild to bundle functions (optional, based on your needs)
+  node_bundler = "esbuild"
+
+  # Directory for Netlify functions (if you use serverless functions)
+  directory = "netlify/functions"
+
+[[redirects]]
+  # Redirect all requests to index.html (for single-page applications)
+  from = "/*"
+  to = "/index.html"
+  status = 200
