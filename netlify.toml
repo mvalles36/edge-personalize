@@ -9,7 +9,6 @@
   node_version = "10"
 
 [[plugins]]
-  package = "@netlify/plugin-functions-core"
 
 [functions]
   # Use esbuild to bundle functions (optional, based on your needs)
