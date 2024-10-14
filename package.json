@@ -48,7 +48,6 @@
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
-    "@netlify/plugin-functions-core": "*",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/cheerio": "^0.22.22",
     "@types/prettier": "^2.1.5",
